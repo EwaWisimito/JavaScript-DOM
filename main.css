@@ -38,8 +38,13 @@ body{
 
 #toast{
     display: flex;
-    justify-content: center;
-    align-self: flex-end;
+    text-align: center;
+    background-color: rgba(104, 103, 103, 0.39);
+    border-radius: 2px;
+    border: solid black 1px;
+    width: 200px;
+    height: 25px;
+    
     
 
 }

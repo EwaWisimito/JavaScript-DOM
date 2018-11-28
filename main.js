@@ -17,7 +17,7 @@ function toast(message){
     const toast = document.createElement('div');
     toast.id = 'toast';
     toast.innerText = message;
-    document.body.appendChild(toast);
+    document.getElementById('toast-container').appendChild(toast);
     setTimeout(function(){
         toast.remove()
     }, 1500)
