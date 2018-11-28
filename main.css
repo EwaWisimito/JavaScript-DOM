@@ -10,7 +10,7 @@ body{
     display: flex;
     align-self: center;
     align-items: center;
-    margin: 20% 30% 20% 30%;
+    margin: 10% 30% 20% 30%;
    flex-direction: column;
   
 
@@ -38,6 +38,7 @@ body{
 
 #toast{
     display: flex;
+    justify-content: center;
     text-align: center;
     background-color: rgba(104, 103, 103, 0.39);
     border-radius: 2px;

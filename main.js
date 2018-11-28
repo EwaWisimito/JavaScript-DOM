@@ -1,3 +1,4 @@
+(function(){
 const addBtn = document.getElementById('AddBtn');
 const subBtn = document.getElementById('SubBtn');
 var counter = document.getElementById('counter').innerHTML = 0;
@@ -13,12 +14,12 @@ subBtn.addEventListener('click', function () {
     return document.getElementById('counter').innerHTML = counter
 })
 
-function toast(message){
+function toast(message) {
     const toast = document.createElement('div');
     toast.id = 'toast';
     toast.innerText = message;
     document.getElementById('toast-container').appendChild(toast);
-    setTimeout(function(){
+    setTimeout(function () {
         toast.remove()
     }, 1500)
 }
@@ -26,13 +27,12 @@ function toast(message){
 
 
 
-addBtn.addEventListener('click',function(){
+addBtn.addEventListener('click', function () {
     toast('YUPPI!');
-    })
+})
 
-subBtn.addEventListener('click',function(){
+subBtn.addEventListener('click', function () {
     toast('NOOO!');
-    })
-
-
+})
+})();
 
