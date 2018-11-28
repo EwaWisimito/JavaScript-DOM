@@ -25,8 +25,6 @@ function toast(message) {
 }
 
 
-
-
 addBtn.addEventListener('click', function () {
     toast('YUPPI!');
 })
