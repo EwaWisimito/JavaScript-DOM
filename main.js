@@ -3,20 +3,36 @@ const subBtn = document.getElementById('SubBtn');
 var counter = document.getElementById('counter').innerHTML = 0;
 
 
-addBtn.addEventListener('click', function(){
+addBtn.addEventListener('click', function () {
     counter++;
-return document.getElementById('counter').innerHTML= counter
+    return document.getElementById('counter').innerHTML = counter
 })
 
-subBtn.addEventListener('click', function(){
+subBtn.addEventListener('click', function () {
     counter--;
-    return document.getElementById('counter').innerHTML= counter
+    return document.getElementById('counter').innerHTML = counter
 })
 
+function toast(message){
+    const toast = document.createElement('div');
+    toast.id = 'toast';
+    toast.innerText = message;
+    document.body.appendChild(toast);
+    setTimeout(function(){
+        toast.remove()
+    }, 1500)
+}
 
-const toast = document.createElement('div');
-toast.id = 'toast';
-document.body.appendChild(toast);
+
+
+
+addBtn.addEventListener('click',function(){
+    toast('YUPPI!');
+    })
+
+subBtn.addEventListener('click',function(){
+    toast('NOOO!');
+    })
 
 
 
